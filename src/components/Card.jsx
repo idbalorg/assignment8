@@ -21,17 +21,20 @@ import React from 'react';
 // }
 
 const Card =(props)=> {
-    
+
 
     return(
         <div>       
-            <div>
-            <img src={props.picture} alt="" />
+            <div className='card'>
+             <div className='top'>
+             <img className='circle-img' src={props.picture} alt="" />
+            </div>   
 
+            
+            <div className='bottom'>
+            <p className='info'>{props.id}</p>
+            <p className='info'>{`${props.title} ${props.firstName} ${props.lastName}`}</p>
             </div>
-            <div>
-            <p>{props.id}</p>
-            <p>{`${props.title} ${props.firstName} ${props.lastName}`}</p>
             </div>
         </div>
     )
